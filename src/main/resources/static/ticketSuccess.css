@@ -1,0 +1,212 @@
+.ticket-book-main-container{
+	flex:5;
+	background-image: linear-gradient(to right bottom, #44d1db, #29bfd4, #0caccc, #009ac2, #0387b6);
+	
+	display: flex;
+}
+
+.ticket-left-container{
+	flex: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.ticket-right-container{
+	flex :1;
+	padding: 3%;
+	display: flex;
+	
+}
+.home-main-cont{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.ticket-container{
+	width: 650px;
+	height: 250px;
+	display: flex;
+	background: url(https://assetscdn1.paytm.com/movies_new/_next/static/media/moviesPBG.d183e7f1.png);
+   
+}
+
+.ticket-left-half{
+	flex: 2;
+	border-right: dashed 7px #1DB7D1;;
+	position: relative;
+	display: flex;
+}
+.ticket-right-half{
+	flex: 1;
+	border-radius: 5px;
+	flex-direction: column;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.circle-dot{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #26BDD3;
+	position: absolute;
+	
+    top: 15px;
+    left : -15px;
+}
+.circle-dot-right{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #26BDD3;
+	position: absolute;
+    top: 15px;
+    right : -15px;
+}
+
+.details-cont-theatre{
+	display: flex;
+}
+.delete-img-ticket{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	cursor: pointer;
+}
+
+.ticket-movie-img{
+	width: 200px;
+	height: 250px;
+}
+.tid-cont{
+	position: absolute;
+	font-size: 16px;
+	color: #B2B9B4;
+	top: 10px;
+}
+
+.ticket-details-container{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 2%;
+	padding-right: 1%;
+	justify-content: space-evenly;
+}
+.label-tags{
+	font-size: 16px;
+	color: #26BDD3;
+}
+.details{
+	font-size: 17px;
+	color: black;
+}
+.details-cont{
+	display: flex;
+	flex-direction: column;
+}
+
+.time-seat-cont{
+	display: flex;
+}
+.time-cont{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.seat-cont{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#qrcode {
+  margin-top:15px;
+}
+
+.payment-form{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+.select-payment-option-div{
+	flex: 1;
+	border-radius: 10px;
+	display: flex;
+	padding: 2%;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: white;
+}
+.payment-details-div{
+	flex:2;
+	margin-top: 30px;
+	border-radius: 10px;
+	display: flex;
+	background-color: white;
+	padding: 5%;
+	align-content: space-around;
+	
+}
+.modal-submit-button{
+	width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00b8f5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5%;
+}
+.payment-option{
+	min-width: 90px;
+	height: 90px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid hsla(0,0%,6%,.13);
+	cursor: pointer;
+}
+.selected-payment-option{
+	border: 1px solid #26BDD3;
+}
+
+.payment-details-cont-div{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.payment-price{
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	
+}
+
+.calculation-part{
+	flex:3;
+	
+	
+}
+.subtotal-part{
+	flex: 1;
+}
+.payment-price-column{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.payment-subtotal-div{
+	padding: 20px 0;
+	border-top: 1px solid hsla(0,0%,6%,.13);
+}

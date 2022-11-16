@@ -1,0 +1,362 @@
+
+/*Add Seat */
+
+*{
+	font-size: 20px;
+}
+.active-seat {
+  background: #fff;
+  border: 1.5px solid #00b8f5;
+  /* flex-shrink: 0; */
+  border-radius: 4px;
+  height: 28px;
+  width: 28px;
+  margin-right: 8px;
+  display: block;
+  margin: 5px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: gray;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.selected-seat {
+  background: #00b8f5;
+  border: 1.5px solid #00b8f5;
+  /* flex-shrink: 0; */
+  border-radius: 4px;
+  height: 28px;
+  width: 28px;
+  margin-right: 8px;
+  display: block;
+  margin: 5px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: gray;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+*{
+margin: 0;	
+}
+body{
+	margin: 0;
+}
+.seat-ul{
+	padding: 2% 0;
+	 padding-top: 0;
+	  display: flex;
+	   flex-direction: column;
+	    justify-content: center;
+	     align-items: center;
+}
+
+.seat-li{
+	display: flex;
+}
+.char-span{
+	width : 30px;
+	color: hsla(0,0%,6%,.54);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gap-seat{
+	 background: white;
+  /* flex-shrink: 0; */
+  border-radius: 4px;
+  height: 28px;
+  width: 28px;
+  margin-right: 8px;
+  display: block;
+  margin: 5px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+.first-div{
+	display: flex;
+	flex-direction: column;
+	padding: 34px 0 20px;
+}
+.second-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+    line-height: 24px;
+}
+.image-main-container{
+	display: flex;
+	 flex: 1;
+	  justify-content: center;
+	   width: 100%;
+}
+
+.img-tag{
+	width:500px;
+}
+
+.seat-insert-submit-button{
+	 width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00b8f5;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5%;
+}
+.edit-seats-button-div{
+	width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00b8f5;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5%;
+}
+.seat-div{
+	flex: 8;
+	 padding: 0 4%;
+	  justify-content: center;
+	   align-items: center;
+	    overflow: auto;
+	     max-height: 700px;
+}
+
+.seat-main-div{
+	 display: flex;
+	  height: 100vh;
+	   flex-direction: column;
+	    width: 100%;
+}
+
+.active-seat:hover {
+  background-color: #00b8f5;
+  cursor: pointer;
+  color: #fff;
+}
+.add-seat-heading{
+	padding: 15px 0;
+	border-bottom: 1px solid lightgray;
+}
+.details-display-div{
+	padding: 15px;
+}
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.seat-details-span-container{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px 10%;
+}
+#details-display-div{
+	display: flex;
+	flex-direction: column;
+}
+.modal-content-div{
+	display: flex;
+	min-height: 100px;
+	max-height: 700px;
+	overflow:auto;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#button-insert-seat-div{
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	height: 100px;
+	display: none;
+	border-top: 1px solid lightgray;
+}
+
+#message-show-bar{
+	padding: 1% 2%;
+	color: white;
+	font-weight: 500;
+	position: absolute;
+	top: 0;
+	border-radius: 5px;
+	right: 0;
+	margin: 10px;
+	display: none;
+	z-index: 100;
+}
+
+#show-options{
+	display: flex;
+	flex:1;
+	justify-content: space-evenly;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+}
+
+.reset-button{
+	width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #FE9801;
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5%;
+}
+
+
+
+/*View Screen */
+
+.view-screen-main-container{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+.view-screen-navbar{
+	display: flex;
+	flex:1;
+	align-items: center;
+	justify-content: space-between;
+	padding:10px 5%;
+	border-bottom: 1px solid lightgray;
+}
+
+.view-screen-display-container{
+	flex:8;
+	padding: 3% 5% ;
+	max-height: 733px;
+	overflow: auto;
+}
+
+.view-screen-single-div{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding:2%;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.screen-name-div{
+	flex:1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.screen-options-div{
+	flex:1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.delete-img{
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.modal-general{
+	display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal-button-div{
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	height: 100px;
+	display: flex;
+	border-top: 1px solid lightgray;
+}
+.modal-submit-button{
+	width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00b8f5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5%;
+}
+.modal-general-input{
+	height: 30px;
+	border-color: white;
+	border-radius: 6px;
+}
+
+.theatre-name-heading{
+	display: flex;
+	align-items: center;
+}
